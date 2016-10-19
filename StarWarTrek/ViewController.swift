@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     }
     
  
+    // MARK: Star Wars
+    
     func setupStarWarsGestureRecognizers() {
         let imageViews = [starWarsOne, starWarsTwo, starWarsThree, starWarsFour]
         
@@ -47,7 +49,10 @@ class ViewController: UIViewController {
         chosenImageView.layer.borderWidth = 2.0
         chosenImageView.layer.borderColor = UIColor.green.cgColor
         starWarsCharacter = chosenImageView
+        checkForFight()
     }
+    
+    // MARK: Star Trek
     
     func setupStarTrekGestureRecognizers() {
         let imageViews = [starTrekOne, starTrekTwo, starTrekThree, starTrekFour]
@@ -66,9 +71,38 @@ class ViewController: UIViewController {
         chosenImageView.layer.borderWidth = 2.0
         chosenImageView.layer.borderColor = UIColor.green.cgColor
         starTrekCharacter = chosenImageView
-
+        checkForFight()
     }
+    
+    
+    func checkForFight() {
+        if starWarsCharacter != nil && starTrekCharacter != nil {
+            performSegue(withIdentifier: "fightSegue", sender: nil)
+            
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? DetailViewController {
+            dest.starWarsImage = starWarsCharacter.image
+            dest.starTrekImage = starTrekCharacter.image
+            
+        }
+        
+        
+    }
+    
 
 }
+
+
+
+
+
+
+
+
+
+
 
 

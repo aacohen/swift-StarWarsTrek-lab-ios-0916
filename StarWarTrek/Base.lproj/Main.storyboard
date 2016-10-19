@@ -119,12 +119,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F1T-JP-Sur">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F1T-JP-Sur">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="F1T-JP-Sur" secondAttribute="height" multiplier="1:1" id="t17-le-wuz"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o3g-EP-d7q">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o3g-EP-d7q">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="o3g-EP-d7q" secondAttribute="height" multiplier="1:1" id="Bae-rk-RVc"/>
                                 </constraints>
